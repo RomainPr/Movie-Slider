@@ -1,0 +1,197 @@
+/* SLIDER */ 
+/**********************************/
+
+#slider {
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 10px auto;
+    border-radius: 4px;
+}
+
+#slider ul {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 590px;
+    list-style: none;
+}
+
+#slider ul li {
+    position: relative;
+    display: block;
+    margin-top: 5px;
+    padding: 0;
+    width: 100%;
+    height: 607px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+a.control_prev, a.control_next {
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 3% 6%;
+    width: auto;
+    height: auto;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+    color: #fff !important;
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+    left: 0;
+    border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+    right: 0;
+    border-radius: 2px 0 0 2px;
+}
+
+a.bullet_next, a.bullet_prev {
+    cursor: pointer;
+}
+
+.fa-arrow-circle-left, 
+.fa-arrow-circle-right {
+    color: #fff;
+}
+
+/* MOVIE TITLE */ 
+/**********************************/
+
+.h2-like {
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
+    text-align: center;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+/* MOVIE DESCRIPTION */ 
+/**********************************/
+
+.descr {
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    font-size: 0.8em;
+    background: rgba(0,0,0,0.9);
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* MOVIE IMAGE */ 
+/**********************************/
+
+#image img {
+    border-radius: 10px;
+}
+
+/* MOVIE STARS */ 
+/**********************************/
+
+.stars {
+    position: relative;
+    left: 0;
+    right: 0;
+    color: yellow;
+    bottom: 90%;
+}
+
+/* OTHER */ 
+/**********************************/
+
+.active {
+    color: red !important;
+}
+
+/* RWD */ 
+/**********************************/
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #slider ul li {
+        height: 370px;
+    }
+    #slider ul {
+        height: 360px;
+    }
+    .stars {
+        bottom: 85%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    #slider ul li {
+        height: 505px;
+    }
+    #slider ul {
+        height: 490px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .container {
+        max-width: 375px;
+    }
+    #slider ul li {
+        height: 177px;
+    }
+    #slider ul {
+        height: 162px;
+    }
+    .h2-like {
+        font-size: 1em;
+        padding-top: 10px;
+    }
+    .stars {
+        bottom: 85%;
+    }
+    .descr {
+        padding: 5px;
+        font-size: 0.7em;
+    }
+    a.control_prev, a.control_next {
+        padding: 3% 12%;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    #slider ul li {
+        height: 272px;
+    }
+    #slider ul {
+        height: 262px;
+    }
+    .h2-like {
+        font-size: 1.8em;
+        padding-top: 10px;
+    }
+    .descr {
+        padding: 5px;
+        font-size: 0.7em;
+    }
+    .stars {
+        bottom: 85%;
+    }
+}
+
